@@ -1,4 +1,3 @@
-import com.goyeau.orkestra._
 import com.goyeau.orkestra.Dsl._
 import com.goyeau.orkestra.board._
 import com.goyeau.orkestra.job._
