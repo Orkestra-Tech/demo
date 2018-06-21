@@ -21,6 +21,6 @@ object Orkestra extends OrkestraServer with GithubHooks {
 
   lazy val githubTriggers = Set(
     PullRequestTrigger(Repository("myOrganisation/myRepo"), PullRequestChecks.job)(),
-    BranchTrigger(Repository("myOrganisation/myRepo"), "master", PublishAndDeploy.job)("staging")
+    BranchTrigger(Repository("myOrganisation/myRepo"), "master", PublishAndDeploy.job)(true, "staging")
   )
 }
