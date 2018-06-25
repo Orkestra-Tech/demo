@@ -17,7 +17,7 @@ object Elasticsearch {
     _ <- Kubernetes.client.services.namespace(environmentName).createOrUpdate(internalService)
   } yield ()
 
-  val service: Service = Service(
+  val service = Service(
     metadata = Option(ObjectMeta(name = Option(advertisedHostName))),
     spec = Option(
       ServiceSpec(

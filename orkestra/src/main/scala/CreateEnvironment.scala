@@ -4,7 +4,7 @@ import com.goyeau.orkestra.job._
 import com.goyeau.orkestra.model._
 import com.goyeau.orkestra.parameter._
 
-import scala.concurrent.{Await, Future}
+import scala.concurrent.Await
 import scala.concurrent.duration._
 
 object CreateEnvironment {

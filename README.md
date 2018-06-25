@@ -11,7 +11,7 @@ https://orkestracd.github.io/orkestra
 ## Usage
 
 ```
-minikube start                            # Start Minikube
+minikube start --memory 4096              # Start Minikube
 eval `minikube docker-env`                # Make docker use the docker engine of Minikube
 sbt orkestraJVM/Docker/publishLocal       # Publish the docker artifact
 kubectl apply -f kubernetes/              # Apply the deployment to Kubernetes
