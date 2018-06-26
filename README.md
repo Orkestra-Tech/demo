@@ -6,7 +6,7 @@ https://itnext.io/functional-devops-with-scala-a-kubernetes-3d7c91bca72f
 This demo is a complete setup using Orkestra for the CI and CD.
 
 See documentation:
-https://orkestracd.github.io/orkestra
+https://orkestracd.github.io
 
 ## Usage
 
