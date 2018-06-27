@@ -1,10 +1,10 @@
-import com.goyeau.orkestra.Dsl._
-import com.goyeau.orkestra.board._
-import com.goyeau.orkestra.job._
-import com.goyeau.orkestra.model._
-import com.goyeau.orkestra.parameter._
-import com.goyeau.orkestra.utils.Shells._
-import com.goyeau.orkestra.github._
+import tech.orkestra.Dsl._
+import tech.orkestra.board._
+import tech.orkestra.job._
+import tech.orkestra.model._
+import tech.orkestra.parameter._
+import tech.orkestra.utils.Shells._
+import tech.orkestra.github._
 
 object PullRequestChecks {
   lazy val board = JobBoard[GitRef => Unit](JobId("pullRequestChecks"), "Pull Request Checks")(

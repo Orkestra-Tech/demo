@@ -1,5 +1,5 @@
-import com.goyeau.kubernetesclient.IntValue
-import com.goyeau.orkestra.utils.AkkaImplicits._
+import com.goyeau.kubernetes.client.IntValue
+import tech.orkestra.utils.AkkaImplicits._
 import io.k8s.api.apps.v1beta2.{StatefulSet, StatefulSetSpec, StatefulSetUpdateStrategy}
 import io.k8s.api.core.v1._
 import io.k8s.apimachinery.pkg.api.resource.Quantity

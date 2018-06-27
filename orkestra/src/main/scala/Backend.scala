@@ -1,4 +1,4 @@
-import com.goyeau.orkestra.github.GitRef
+import tech.orkestra.github.GitRef
 
 import scala.concurrent.Future
 

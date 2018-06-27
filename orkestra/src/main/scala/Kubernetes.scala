@@ -1,7 +1,7 @@
 import java.io.File
 
-import com.goyeau.kubernetesclient.{KubeConfig, KubernetesClient}
-import com.goyeau.orkestra.utils.AkkaImplicits._
+import com.goyeau.kubernetes.client.{KubeConfig, KubernetesClient}
+import tech.orkestra.utils.AkkaImplicits._
 
 import scala.io.Source
 

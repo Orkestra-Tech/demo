@@ -1,8 +1,8 @@
-import com.goyeau.orkestra.Dsl._
-import com.goyeau.orkestra.board.JobBoard
-import com.goyeau.orkestra.job.Job
-import com.goyeau.orkestra.model.JobId
-import com.goyeau.orkestra.parameter.Input
+import tech.orkestra.Dsl._
+import tech.orkestra.board.JobBoard
+import tech.orkestra.job.Job
+import tech.orkestra.model.JobId
+import tech.orkestra.parameter.Input
 
 import scala.concurrent.Await
 import scala.concurrent.duration._
