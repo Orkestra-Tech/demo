@@ -11,7 +11,7 @@ import scala.concurrent.duration._
 object PublishBackend {
   lazy val board = JobBoard[(GitRef, Boolean) => String](JobId("publishBackend"), "Publish Backend")(
     Input[GitRef]("Git ref"),
-    Checkbox("Run checks")
+    Checkbox("Run checks", checked = true)
   )
 
   lazy val job = Job(board) { implicit workDir => (gitRef, runChecks) =>

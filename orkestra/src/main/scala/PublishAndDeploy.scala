@@ -16,7 +16,7 @@ object PublishAndDeploy {
       "Publish and Deploy Backend"
     )(
       Input[GitRef]("Git ref"),
-      Checkbox("Run checks"),
+      Checkbox("Run checks", checked = true),
       Input[String]("Environment name")
     )
 
