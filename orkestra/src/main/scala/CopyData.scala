@@ -14,7 +14,7 @@ object CopyData {
   )
 
   lazy val job = Job(board) { implicit workDir => (source, destination) =>
-    Await.result(copyData(source, destination), 1.minute)
+    Await.result(copyData(source, destination), 1.hour)
   }
 
   // This should probably implemented in the backend repo and
