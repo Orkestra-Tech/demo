@@ -9,7 +9,7 @@ import tech.orkestra.utils.Triggers._
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object PublishAndDeploy {
+object PublishAndDeployBackend {
   lazy val board =
     JobBoard[(GitRef, Boolean, String) => Unit](
       JobId("publishAndDeployBackend"),

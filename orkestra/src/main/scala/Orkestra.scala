@@ -9,7 +9,7 @@ object Orkestra extends OrkestraServer with GithubHooks with CronTriggers {
     CreateEnvironment.board,
     PublishBackend.board,
     DeployBackend.board,
-    PublishAndDeploy.board,
+    PublishAndDeployBackend.board,
     CopyData.board
   )
 
@@ -18,13 +18,13 @@ object Orkestra extends OrkestraServer with GithubHooks with CronTriggers {
     CreateEnvironment.job,
     PublishBackend.job,
     DeployBackend.job,
-    PublishAndDeploy.job,
+    PublishAndDeployBackend.job,
     CopyData.job
   )
 
   lazy val githubTriggers = Set(
     PullRequestTrigger(Repository("myOrganisation/myRepo"), PullRequestChecks.job)(),
-    BranchTrigger(Repository("myOrganisation/myRepo"), "master", PublishAndDeploy.job)(true, "staging")
+    BranchTrigger(Repository("myOrganisation/myRepo"), "master", PublishAndDeployBackend.job)(true, "staging")
   )
 
   lazy val cronTriggers = Set(
